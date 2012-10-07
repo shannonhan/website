@@ -1,0 +1,299 @@
+/*
+*
+*
+*	site-specific layout statements
+*
+*/
+
+
+/*	Structure
+-------------------------------------------------------------- */
+
+body,html{
+	margin:0px;
+	padding:0px;
+        font-size: 100%;
+
+
+}
+
+#totalContainer{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.width_1#totalContainer{
+	width:1038px;
+}
+
+.width_2#totalContainer{
+	width:978px;
+}
+
+#topBar{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:100%;
+}
+
+#topBarContainer{
+	margin:15px auto 15px auto;
+}
+	
+.width_1#topBarContainer{
+	width:1038px;
+}
+	
+.width_2#topBarContainer{
+	width:978px;
+}
+
+#topBarLink{ /* top toggle bar */
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	height:10px;
+	width:100%;
+}
+
+#topBarLink a{ /* top toggle bar */
+	float:left;
+	margin-left:48.5%; /* make it block level and try to center it without javascript..*/
+	padding:15px 10px 5px 10px;
+}
+
+#topBarLink.withoutTopRegion a{ /* makes space in case we don't have any element in the top Region */
+	margin-bottom:50px;
+}
+
+#top{ /* upper part of the template */
+	float:left;
+	width:100%;
+	height: 80px;
+	position:relative;
+	margin-bottom:10px;
+        
+}
+
+#sidebar-first{
+	float:left;
+        border-right: 1px dashed #011F5B;  
+}
+
+li.leaf{
+        font-size:16px;
+}
+
+li.leaf a:link{
+        text-decoration:none        
+}
+
+
+li.leaf a:hover{
+        color:#990000;
+        text-decoration:underline        
+}
+
+
+li.expanded{
+        font-size:16px;
+}
+
+li.expanded a:link{
+        text-decoration:none  
+}
+
+li.expanded a:hover{
+        color:#990000;
+        text-decoration:underline;        
+}
+
+#page-title{
+	font-size:200%;
+	display:none;
+}
+
+
+#topUtility{
+	position:absolute;
+	top:20px;
+	right:0px;
+}
+
+#logo-container{ /* image logo container */
+	float:left;
+	height:150px;
+	margin-right:10px;
+	margin-top: 0px;
+}
+
+#title-slogan{ /* site title and slogan container */
+	float:left;
+	margin-top:12px;
+	margin-left:15px;
+}
+
+#site-title,
+#site-slogan{ 
+	margin:0px;
+	padding:0px;
+        font-family: cambria;
+}
+#site-slogan{
+	margin-top:6px;
+}
+
+#search{ /* theme search box */
+	position: absolute;
+	right:0px;
+	top: 30px;
+}
+
+#search div{ /* search button inline */
+	display: inline;
+}
+
+#pageBorder{ /* makes the border */
+	float: left;
+	background: #323425;
+}
+
+.ie7 #pageBorder{ /* for IE7 */
+  float: none;
+  overflow: hidden;
+}
+
+
+#content{
+
+}
+
+/*style for the slider show*/
+#block-views-slider-block{
+        padding-left:30px;
+
+
+}
+
+#siteContent{
+
+}
+
+#contentWrapper{ /* wraps content */
+	float: left;
+	padding:3px 3px 3px 3px;
+	position: relative;
+	z-index: 1;	/* follows the z-index order of primary menu and advertise (to solve ie7 z-index BUG )*/
+}
+
+.breadcrumb{ /* breadcrumb */
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #ccc;
+	margin:0px 10px 15px 10px;
+}
+
+#footer{ /* site footer*/
+	margin-top: 25px;
+	padding-bottom:60px;
+	float: left;
+	width: 100%;
+	position:relative;
+}
+
+#navigation-footer{ /* site footer*/
+	position:absolute;
+	right:0px;
+	top:0px;
+	
+}
+
+#bottomUtility{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+/* utility menu */
+
+.utility ul.menu{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+.utility ul.menu li{
+	display:inline;
+	margin:0px 0px 0px 4px;
+	padding:0px;
+}
+
+.utility ul.menu li a{
+	padding-right:8px;
+}
+
+.utility ul.menu li:after{
+	content:"|";
+}
+
+
+/*	Look & Feel
+-------------------------------------------------------------- */
+
+body.marinelli{
+	background: #011F5B;
+}
+	
+#topBar,#topBarLink,#topBarLink a{ /* top toggle bar */
+	background:#054b81;
+}
+
+#topBarLink a{
+	font-size: 1.1em;
+}
+
+.outsidecontent{
+	color:white;
+}
+
+#site-title{
+	font-family: Cambria,Helvetica;	
+	font-weight: bold;		
+}
+
+#site-title{
+	font-size: 2em;
+	line-height:0.8em;
+}
+
+#site-slogan {
+	font-size: 1.1em;
+	text-indent: 0.5em;
+}
+
+#pageBorder{ /* border of the whole site */ 
+	border:3px solid #990000;
+}
+	
+#pageBorder.noborder{ /* when we don't have the advertise region */ 
+	border-top:0px;
+}
+
+#contentWrapper{
+	background: white;
+}
+
+.breadcrumb { /* breadcrumb */
+	font-weight: bold;
+}
+
+.utility{ /* utility menu */
+	font-size:0.9em;
+	text-transform:uppercase;
+}
+.my_page_header{
+	color:#990000;
+
+}
+
+
